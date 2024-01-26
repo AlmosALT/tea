@@ -55,7 +55,7 @@ header {
     background-size: cover;
     background:
         linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url(images/main-bcg.jpeg);
+        url(static/main-bcg.jpeg);
 }
 
 header .cim {

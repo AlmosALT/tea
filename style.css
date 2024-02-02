@@ -49,13 +49,11 @@ font-size: 0.875rem;
 
 header {
     min-height: 100vh;
-    background: url(images/main-bcg.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     background:
         linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url(static/main-bcg.jpeg);
+        url(static/main-bcg.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 header .cim {
@@ -64,4 +62,32 @@ header .cim {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%)
+}
+
+header .cim h2 {
+    font-family: var(--ff-secondary);
+    color: var(--clr-primary)
+}
+
+header .cim h1 {
+    font-family: var(--ff-primary);
+    color: var(--clr-white);
+    text-transform:uppercase;
+    margin-bottom: 2rem;
+}
+
+header .cim a {
+    font-family: var(--ff-primary);
+    color: var(--clr-white);
+    text-transform:uppercase;
+    font-size:1rem;
+    font-weight: 700;
+    background-color: var(--clr-primary);
+    padding: 0.75rem;
+    letter-spacing: 0.25rem;
+}
+
+.spacer {
+    height:0.5rem;
+    background: linear-gradient(to right, var(--clr-primary), var(--clr-primary-light), var(--clr-primary));
 }
